@@ -2,11 +2,11 @@
     var isOn = true,
         href,
         actions = [
-            'a:contains("Rozdaj")',
-            'a:contains("Zbierz dochód!")',
-            'a:contains("Kup towary")',
-            'a:contains("Przewieź")',
-            'a:contains("napiwki")',
+            'a.tdu:contains("Rozdaj")',
+            'a.tdu:contains("Zbierz dochód!")',
+            'a.tdu:contains("Kup towary")',
+            'a.tdu:contains("Przewieź")',
+            'a.tdu:contains("napiwki")',
             'span.action a.tdu'
         ];
     for(var i = 0; !href && i < actions.length; i++) {
