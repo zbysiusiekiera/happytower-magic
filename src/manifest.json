@@ -1,0 +1,30 @@
+{
+	"name": "HappyTower magic",
+	"version": "1.1",
+	"description": "HappyTower magic",
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": false
+	},
+	"page_action": {
+		"default_icon": "wand-icon.png",
+		"default_title": "HappyTower magic"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://www.happytower.pl/*"
+			],
+			"js": [
+				"jquery.min.js",
+				"happytower.js"
+			]
+		}
+	],
+	"permissions": [
+		"declarativeContent"
+	],
+	"manifest_version": 2
+}
